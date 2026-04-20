@@ -1,36 +1,121 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# From A/Z — Website
 
-## Getting Started
+One-page conversion site for From A/Z studio. Built with Next.js 16, TailwindCSS v4, next-intl (EN/SL), and Framer Motion.
 
-First, run the development server:
+---
+
+## Pre-launch checklist (your jobs)
+
+- [ ] Register `from-az.com` at Namecheap / GoDaddy
+- [ ] Set up `info@from-az.com` email (Zoho Mail free tier works)
+- [ ] Create Cal.com link → replace all `href="#"` on CTA buttons
+- [ ] Add real images to `FeaturedClient.tsx` (replace IMAGE PLACEHOLDER divs)
+- [ ] Review Slovenian copy with a native speaker
+- [ ] Add `public/og-image.png` (1200×630) — use Figma or Canva
+- [ ] Add `public/favicon.ico` + `public/favicon.svg`
+- [ ] Sign up for Plausible (plausible.io) → domain `from-az.com`
+
+---
+
+## Development
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# → http://localhost:3000
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Deploy to Vercel
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+# 1. Push to GitHub
+git init
+git add .
+git commit -m "initial"
+git remote add origin <your-github-repo-url>
+git push -u origin main
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+# 2. Import to Vercel
+# → vercel.com/new → Import Git Repository → Deploy
 
-## Learn More
+# 3. Add custom domain
+# Vercel dashboard → Settings → Domains → Add → from-az.com
+# Update DNS: A record → 76.76.21.21 (Vercel IP)
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Project structure
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
+from-az/
+├── app/
+│   ├── [locale]/
+│   │   ├── layout.tsx      ← fonts, metadata, schema, Plausible
+│   │   └── page.tsx        ← assembles all sections
+│   ├── globals.css          ← CSS variables / design tokens
+│   ├── layout.tsx           ← root shell (minimal)
+│   ├── page.tsx             ← redirects / to /en
+│   └── not-found.tsx        ← 404 page
+├── components/
+│   ├── Nav.tsx
+│   ├── Hero.tsx             ← update Cal.com link
+│   ├── ProblemBlock.tsx
+│   ├── Pillars.tsx
+│   ├── FeaturedClient.tsx   ← update images + Cal.com link
+│   ├── Process.tsx
+│   ├── Pricing.tsx          ← update Cal.com links
+│   ├── About.tsx
+│   ├── FinalCTA.tsx         ← update Cal.com link
+│   ├── Footer.tsx
+│   ├── LangToggle.tsx
+│   └── FadeUp.tsx           ← scroll animation wrapper
+├── messages/
+│   ├── en.json              ← all English copy
+│   └── sl.json              ← all Slovenian copy (needs native review)
+├── i18n/
+│   ├── routing.ts           ← locale config
+│   └── request.ts           ← message loading
+├── proxy.ts                 ← Next.js 16 locale routing proxy
+└── next-sitemap.config.js
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Replacing placeholder content
 
-## Deploy on Vercel
+### Cal.com booking link
+Search for `href="#"` on all CTA buttons in `Hero.tsx`, `Pricing.tsx`, `FinalCTA.tsx`, `Nav.tsx`, `Footer.tsx`. Replace `"#"` with your Cal.com link.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Project images
+In `FeaturedClient.tsx`, replace the placeholder `<div>` blocks with:
+```tsx
+import Image from "next/image";
+<Image src="/assets/369-place.jpg" alt="369 Place venue" fill className="object-cover" />
+```
+Drop images into `public/assets/`.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Nano Banana 3D asset
+In `Hero.tsx`, uncomment and populate the commented-out block marked `NANO BANANA ASSET HERE`.
+
+---
+
+## Tech stack
+
+| Tool | Version | Purpose |
+|------|---------|---------|
+| Next.js | 16 | Framework |
+| TypeScript | 5 | Types |
+| TailwindCSS | 4 | Styling |
+| next-intl | 4 | EN/SL i18n |
+| Framer Motion | 12 | Scroll animations |
+| Plausible | — | Privacy-first analytics |
+| next-sitemap | 4 | Sitemap generation |
+
+---
+
+## Cost breakdown
+
+| Item | Cost |
+|------|------|
+| Domain (`from-az.com`) | ~£10/yr |
+| Email (`info@from-az.com`, Zoho free) | £0 |
+| Vercel hosting (free tier) | £0 |
+| Plausible analytics (free 30 days, then £9/mo) | £0–9/mo |
+| Cal.com (free tier) | £0 |

@@ -1,0 +1,158 @@
+{
+  "nav": {
+    "brand": "From A/Z",
+    "work": "Delo",
+    "pricing": "Cenik",
+    "about": "O nas",
+    "cta": "Rezerviraj analizo"
+  },
+  "hero": {
+    "eyebrow": "SPLETNE STRANI PO MERI · EDINBURG",
+    "stat1value": "5",
+    "stat1unit": "Dni",
+    "stat1label": "Povprečna dostava",
+    "stat2value": "100",
+    "stat2unit": "/100",
+    "stat2label": "Lighthouse ocena",
+    "stat3value": "3",
+    "stat3unit": "/mes",
+    "stat3label": "Maks. nove stranke",
+    "headline": "Spletne strani, ki si zaslužijo svoje mesto.",
+    "subhead": "From A/Z je majhen, neodvisen studio, ki gradi spletne strani po meri za prizorišča, gostinstvo in ambiciozne lokalne znamke. Zagon v petih dneh. Zaupanje po vsej Evropi.",
+    "cta": "Rezervirajte brezplačno 15-minutno analizo",
+    "secondary": "Oglej si delo ↓"
+  },
+  "problem": {
+    "eyebrow": "PRAVA CENA POČASNE SPLETNE STRANI",
+    "headline": "Vaša spletna stran je ali vaš najboljši zaposleni — ali drago breme.",
+    "line1": "Stran, zgrajena pred petimi leti, ne bo več dosegla današnjih strank.",
+    "line2": "Obrazec za rezervacijo, skrit tri klike globoko, ne pretvarja — zgublja.",
+    "line3": "Plačan promet, poslan na stran, ki ni zgrajena za prodajo, je zapravljen denar."
+  },
+  "pillars": {
+    "eyebrow": "KAJ DELAMO",
+    "col1": {
+      "kicker": "GRADIMO",
+      "title": "Ročno kodirano. Brez predlog. Brez odvečnega.",
+      "body": "Vsaka stran je napisana od začetka v sodobnih ogrodjih. 100/100 Lighthouse. Naloži se pod sekundo. Dostavljeno v petih delovnih dneh."
+    },
+    "col2": {
+      "kicker": "RASTEMO",
+      "title": "Uvrstite se tam, kjer vaši kupci že iščejo.",
+      "body": "Tehnični SEO, lokalna shema, vsebina, vodena z iskalnimi izrazi, in mesečno poročanje. SEO prenehamo obravnavati kot ugibanje."
+    },
+    "col3": {
+      "kicker": "AVTOMATIZIRAMO",
+      "title": "Spremenite svojo stran v sistem, ki prodaja.",
+      "body": "Roboti za rezervacije, samodejne prošnje za ocene, kvalifikacija potencialnih strank in AI osnutki odgovorov. Nehate odgovarjati na isto povpraševanje dvakrat."
+    }
+  },
+  "client": {
+    "eyebrow": "ŠTUDIJA PRIMERA",
+    "headline": "En ustanovitelj. Tri podjetja. Enak standard.",
+    "intro": "Vrsta zaupanja, ki jo gradimo, se kaže v ponovnih projektih. Smo dolgoročni digitalni partner za portfelj Mojce Majhen — prizorišče za dogodke, premijsko znamko po meri grajenih avtomobilov in izdano biografijo. Trije popolnoma različni občinstva. En dosleden standard izvedbe.",
+    "project1": {
+      "tag": "PRIZORIŠČE ZA DOGODKE · SLOVENIJA",
+      "title": "Prenovljeno. Ponovno zasedeno.",
+      "body": "Popolna prenova spletne strani in tekoče upravljanje Instagrama. Mesečna povpraševanja za rezervacije so se v prvih 90 dneh povečala za približno deset."
+    },
+    "project2": {
+      "tag": "AVTOMOBILI PO MERI · SLOVENIJA",
+      "title": "Digitalna identiteta, vredna teh projektov.",
+      "body": "Celostna digitalna znamka in drseče animirana spletna stran za 1of1, slovenski luksuzni avtomobilski atelje po meri. Zagon Q2 2026."
+    },
+    "project3": {
+      "tag": "OSEBNA ZNAMKA · PUBLIKACIJA",
+      "title": "Knjiga in spletna prisotnost, ki ji ustreza.",
+      "body": "Digitalna platforma in kreativno vodstvo za izdano biografijo Mojce Majhen — znamka, ki povezuje prizorišče in avtomobilsko znamko."
+    }
+  },
+  "process": {
+    "eyebrow": "KAKO DELA",
+    "headline": "Od prvega klica do objavljene strani v šestih delovnih dneh.",
+    "step1": {
+      "day": "Dan 1",
+      "title": "Analiza.",
+      "body": "15-minutni klic. Natančno določimo, kaj vas danes stane rezervacije ali prodaje."
+    },
+    "step2": {
+      "day": "Dan 2",
+      "title": "Brief.",
+      "body": "Znamka, ton, struktura, cilji — zaklenjeno v enem dokumentu. Brez neskončnega usklajevanja."
+    },
+    "step3": {
+      "day": "Dan 3–5",
+      "title": "Izdelava.",
+      "body": "Ročno kodirano, SEO pripravljeno, AI podprto, kjer šteje."
+    },
+    "step4": {
+      "day": "Dan 6",
+      "title": "Zagon.",
+      "body": "Objavljeno, sledeno in predano s kratkim video vodnikom."
+    }
+  },
+  "pricing": {
+    "eyebrow": "PAKETI",
+    "headline": "Transparentne cene. Brez odkrivalskega gledališča.",
+    "footnote": "Selektiven sprejem. Največ tri nove stranke na mesec. Cene v EUR.",
+    "tier1": {
+      "name": "Začetni",
+      "price": "€1.799",
+      "tagline": "Spletna stran po meri. Dostava v 5 dneh.",
+      "features": [
+        "Enostranska ali manjša večstranska stran po meri",
+        "Mobile-first, 100/100 Lighthouse",
+        "Osnovna SEO nastavitev (meta, shema, sitemap)",
+        "Cal.com / integracija obrazca",
+        "En krog popravkov"
+      ],
+      "cta": "Začnite tukaj →"
+    },
+    "tier2": {
+      "name": "Rast",
+      "price": "€2.999",
+      "tagline": "Stran + 3 mesece SEO.",
+      "badge": "Najpopularnejši",
+      "features": [
+        "Vse iz Začetnega, plus:",
+        "3 mesece SEO vzdrževanja vključeno",
+        "Mesečna SEO vsebina (2 objavi)",
+        "Nastavitev Google poslovnega profila",
+        "Mesečno poročanje (Loom video)"
+      ],
+      "cta": "Najpopularnejši →"
+    },
+    "tier3": {
+      "name": "Razširitev",
+      "price": "€5.399",
+      "tagline": "Stran + SEO + AI avtomatizacija.",
+      "features": [
+        "Vse iz Rasti, plus:",
+        "AI robot za rezervacije ali kvalifikacijo",
+        "Samodejni tok zahtev za ocene",
+        "CRM integracija (HubSpot / Airtable)",
+        "Prednostna obdelava"
+      ],
+      "cta": "Razširi →"
+    }
+  },
+  "about": {
+    "eyebrow": "O NAS",
+    "headline": "Majhen studio. Visok standard.",
+    "p1": "From A/Z je neodvisen studio, ki deluje med Edinburgom in Ljubljano. Gradimo spletne strani, kakršne bi želeli za lastna podjetja — hitre, poštene in zasnovane za ustvarjanje prihodkov, ne občudovanja.",
+    "p2": "Naše ime odraža, kako delamo: znamko peljemo od A do Z — od prve ideje do zagnane, indeksirane, prodajne spletne strani. Ostajamo vitki namerno. Ena koda. En standard. Brez posrednikov, brez zunanjih izvajalcev, brez odvečnega."
+  },
+  "cta": {
+    "eyebrow": "SODELUJMO",
+    "headline": "Če vaša spletna stran ne prinaša rezervacij ali strank, to ta mesec popravimo.",
+    "button": "Rezervirajte 15-minutno analizo",
+    "sub": "Odziv v enem delovnem dnevu. Brez obveznosti."
+  },
+  "footer": {
+    "tagline": "Zgrajeno v Edinburgu · Stranke po vsej Evropi",
+    "email": "info@from-az.com",
+    "ig": "@akramzahwi",
+    "book": "Rezerviraj klic",
+    "copy": "© {year} From A/Z. Vse pravice pridržane."
+  }
+}

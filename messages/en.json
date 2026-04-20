@@ -1,0 +1,158 @@
+{
+  "nav": {
+    "brand": "From A/Z",
+    "work": "Work",
+    "pricing": "Pricing",
+    "about": "About",
+    "cta": "Book audit"
+  },
+  "hero": {
+    "eyebrow": "CUSTOM-CODED WEBSITES · EDINBURGH",
+    "stat1value": "5",
+    "stat1unit": "Days",
+    "stat1label": "Average delivery",
+    "stat2value": "100",
+    "stat2unit": "/100",
+    "stat2label": "Lighthouse score",
+    "stat3value": "3",
+    "stat3unit": "/mo",
+    "stat3label": "Max new clients",
+    "headline": "Websites built to earn their keep.",
+    "subhead": "From A/Z is a small, independent studio building custom-coded sites for venues, hospitality, and ambitious local brands. Launched in five days. Trusted across Europe.",
+    "cta": "Book a free 15-min audit",
+    "secondary": "See the work ↓"
+  },
+  "problem": {
+    "eyebrow": "THE REAL COST OF A SLOW WEBSITE",
+    "headline": "Your website is either your best employee — or an expensive ghost.",
+    "line1": "A site built five years ago won't rank where today's buyers are looking.",
+    "line2": "A booking form buried three clicks deep doesn't convert — it loses.",
+    "line3": "Paid traffic sent to a page that wasn't built to sell is money set on fire."
+  },
+  "pillars": {
+    "eyebrow": "WHAT WE DO",
+    "col1": {
+      "kicker": "BUILD",
+      "title": "Hand-coded. No templates. No bloat.",
+      "body": "Every site is written from scratch in modern frameworks. 100/100 Lighthouse scores. Loads in under a second. Delivered in five working days."
+    },
+    "col2": {
+      "kicker": "GROW",
+      "title": "Rank where your buyers are already searching.",
+      "body": "Technical SEO, local schema, keyword-led content, and monthly reporting. We stop treating SEO like guesswork."
+    },
+    "col3": {
+      "kicker": "AUTOMATE",
+      "title": "Turn your site into a system that sells.",
+      "body": "Booking bots, automatic review requests, lead qualification, and AI-drafted follow-ups. You stop answering the same enquiry twice."
+    }
+  },
+  "client": {
+    "eyebrow": "CASE STUDY",
+    "headline": "One founder. Three businesses. Same standard.",
+    "intro": "The kind of trust we build shows up as repeat work. We're the long-term digital partner for Mojca Majhen's portfolio — an event venue, a high-end custom automotive brand, and a published biography. Three completely different audiences. One coherent standard of execution.",
+    "project1": {
+      "tag": "EVENT VENUE · SLOVENIA",
+      "title": "Rebuilt. Rebooked.",
+      "body": "Full website rebuild and ongoing Instagram management. Monthly booking enquiries increased by roughly ten within the first 90 days."
+    },
+    "project2": {
+      "tag": "CUSTOM AUTOMOTIVE · SLOVENIA",
+      "title": "A digital identity worthy of the builds.",
+      "body": "Full digital brand and scroll-animated site for 1of1, Slovenia's luxury automotive customization atelier. Launching Q2 2026."
+    },
+    "project3": {
+      "tag": "PERSONAL BRAND · PUBLICATION",
+      "title": "A book and a web presence to match.",
+      "body": "Digital platform and creative direction for Mojca Majhen's published biography — a brand that bridges the venue and automotive ventures."
+    }
+  },
+  "process": {
+    "eyebrow": "HOW IT WORKS",
+    "headline": "From first call to live site in six working days.",
+    "step1": {
+      "day": "Day 1",
+      "title": "Audit.",
+      "body": "A 15-minute call. We pinpoint exactly what's costing you bookings or sales today."
+    },
+    "step2": {
+      "day": "Day 2",
+      "title": "Brief.",
+      "body": "Brand, tone, structure, goals — locked in one document. No endless back-and-forth."
+    },
+    "step3": {
+      "day": "Day 3–5",
+      "title": "Build.",
+      "body": "Hand-coded, SEO-ready, AI-enhanced where it matters."
+    },
+    "step4": {
+      "day": "Day 6",
+      "title": "Launch.",
+      "body": "Deployed, tracked, and handed over with a short walkthrough video."
+    }
+  },
+  "pricing": {
+    "eyebrow": "ENGAGEMENT TIERS",
+    "headline": "Transparent pricing. No discovery theatre.",
+    "footnote": "Selective intake. Maximum three new clients per month. Prices in GBP.",
+    "tier1": {
+      "name": "Starter",
+      "price": "£1,499",
+      "tagline": "Custom site. 5-day delivery.",
+      "features": [
+        "Custom-coded single-page or small multi-page site",
+        "Mobile-first, 100/100 Lighthouse",
+        "Basic SEO setup (meta, schema, sitemap)",
+        "Cal.com / form integration",
+        "One round of revisions"
+      ],
+      "cta": "Start here →"
+    },
+    "tier2": {
+      "name": "Growth",
+      "price": "£2,499",
+      "tagline": "Site + 3 months SEO.",
+      "badge": "Most popular",
+      "features": [
+        "Everything in Starter, plus:",
+        "3 months of SEO retainer included",
+        "Monthly SEO content (2 posts)",
+        "Google Business Profile setup",
+        "Monthly reporting (Loom video)"
+      ],
+      "cta": "Most popular →"
+    },
+    "tier3": {
+      "name": "Scale",
+      "price": "£4,499",
+      "tagline": "Site + SEO + AI automation.",
+      "features": [
+        "Everything in Growth, plus:",
+        "AI booking bot or lead qualifier",
+        "Automated review request flow",
+        "CRM integration (HubSpot / Airtable)",
+        "Priority turnaround"
+      ],
+      "cta": "Scale up →"
+    }
+  },
+  "about": {
+    "eyebrow": "ABOUT",
+    "headline": "A small studio. A high standard.",
+    "p1": "From A/Z is an independent studio working between Edinburgh and Ljubljana. We build the kind of websites we'd want for our own businesses — fast, honest, and designed to generate revenue, not admiration.",
+    "p2": "Our name reflects how we work: we take a brand from A to Z — from the first idea to the launched, indexed, converting site. We stay lean on purpose. One codebase. One standard. No account managers, no outsourced work, no bloat."
+  },
+  "cta": {
+    "eyebrow": "LET'S WORK",
+    "headline": "If your website isn't bringing in bookings or customers, let's fix that this month.",
+    "button": "Book your 15-minute audit",
+    "sub": "Reply within one working day. No obligation."
+  },
+  "footer": {
+    "tagline": "Built in Edinburgh · Clients across Europe",
+    "email": "info@from-az.com",
+    "ig": "@akramzahwi",
+    "book": "Book a call",
+    "copy": "© {year} From A/Z. All rights reserved."
+  }
+}
