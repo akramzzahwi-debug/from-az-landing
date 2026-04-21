@@ -19,6 +19,11 @@ export default function FadeUp({ children, delay = 0, className }: FadeUpProps) 
     let cleanup: (() => void) | undefined;
 
     const init = async () => {
+      if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+        el.style.opacity = "1";
+        return;
+      }
+
       const { gsap } = await import("gsap");
       const { ScrollTrigger } = await import("gsap/ScrollTrigger");
       gsap.registerPlugin(ScrollTrigger);

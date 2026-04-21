@@ -1,16 +1,16 @@
 @import "tailwindcss";
 
 :root {
-  --color-bg: #09090B;
-  --color-bg-alt: #0E0E16;
-  --color-bg-card: #13131F;
-  --color-ink: #F4F4F8;
-  --color-ink-muted: #6B7280;
-  --color-line: rgba(255, 255, 255, 0.07);
-  --color-accent: #7C3AED;
+  --color-bg: #050505;
+  --color-bg-alt: #0A0A0F;
+  --color-bg-card: #0F0F16;
+  --color-ink: #F9F9FB;
+  --color-ink-muted: #8E8E9F;
+  --color-line: rgba(255, 255, 255, 0.05);
+  --color-accent: #6366F1; /* Sophisticated Indigo */
   --color-accent-2: #4F46E5;
-  --color-accent-soft: rgba(124, 58, 237, 0.1);
-  --color-accent-glow: rgba(124, 58, 237, 0.28);
+  --color-accent-soft: rgba(99, 102, 241, 0.1);
+  --color-accent-glow: rgba(99, 102, 241, 0.2);
 }
 
 *,
@@ -69,6 +69,12 @@ body {
 @keyframes grid-appear {
   from { opacity: 0; }
   to { opacity: 1; }
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 3px;
+  border-radius: 2px;
 }
 
 @media (prefers-reduced-motion: reduce) {

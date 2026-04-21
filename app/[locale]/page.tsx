@@ -4,6 +4,7 @@ import Hero from "@/components/Hero";
 import TrustBar from "@/components/TrustBar";
 import ProblemBlock from "@/components/ProblemBlock";
 import Pillars from "@/components/Pillars";
+import GrowthChart from "@/components/GrowthChart";
 import FeaturedClient from "@/components/FeaturedClient";
 import Process from "@/components/Process";
 import Pricing from "@/components/Pricing";
@@ -27,6 +28,7 @@ export default async function Home({ params }: Props) {
         <TrustBar />
         <ProblemBlock />
         <Pillars />
+        <GrowthChart />
         <FeaturedClient />
         <Process />
         <Pricing />

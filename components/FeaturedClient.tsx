@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useTranslations } from "next-intl";
 import FadeUp from "./FadeUp";
 
@@ -9,6 +10,7 @@ export default function FeaturedClient() {
 
   return (
     <section
+      id="work"
       className="px-6 md:px-8 py-24 md:py-32"
       style={{ backgroundColor: "var(--color-bg-alt)" }}
     >
@@ -59,9 +61,9 @@ export default function FeaturedClient() {
                 }}
                 onMouseEnter={(e) => {
                   const el = e.currentTarget as HTMLElement;
-                  el.style.borderColor = "rgba(124,58,237,0.4)";
+                  el.style.borderColor = "rgba(99,102,241,0.4)";
                   el.style.boxShadow =
-                    "0 0 40px rgba(124,58,237,0.1), 0 20px 60px rgba(0,0,0,0.3)";
+                    "0 20px 40px rgba(0,0,0,0.4)";
                   el.style.transform = "translateY(-4px)";
                 }}
                 onMouseLeave={(e) => {
@@ -71,15 +73,6 @@ export default function FeaturedClient() {
                   el.style.transform = "translateY(0)";
                 }}
               >
-                {/* Top gradient accent on hover */}
-                <div
-                  className="absolute top-0 left-0 right-0 h-px opacity-0 transition-opacity duration-300 group-hover:opacity-100"
-                  style={{
-                    background:
-                      "linear-gradient(90deg, transparent, var(--color-accent), transparent)",
-                  }}
-                />
-
                 {/* Project Image */}
                 <div
                   className="w-full aspect-[16/9] relative overflow-hidden"
@@ -87,16 +80,17 @@ export default function FeaturedClient() {
                     borderBottom: "1px solid var(--color-line)",
                   }}
                 >
-                  <img
+                  <Image
                     src={`/assets/${proj}.png`}
                     alt={t(`${proj}.title`)}
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                    fill
+                    className="object-cover transition-transform duration-700 group-hover:scale-105"
                   />
                   <div
                     className="absolute inset-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100 mix-blend-overlay"
                     style={{
                       background:
-                        "radial-gradient(ellipse at center, rgba(124,58,237,0.12), transparent 70%)",
+                        "radial-gradient(ellipse at center, rgba(99,102,241,0.1), transparent 70%)",
                     }}
                   />
                 </div>
@@ -110,7 +104,7 @@ export default function FeaturedClient() {
                   </p>
 
                   <h3
-                    className="font-display text-xl mb-3 transition-colors duration-300 group-hover:text-white"
+                    className="font-display text-xl mb-3 transition-colors duration-300"
                     style={{ color: "var(--color-ink)", fontWeight: 400 }}
                   >
                     {t(`${proj}.title`)}

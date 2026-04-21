@@ -50,9 +50,9 @@ export default function Process() {
                 }}
                 onMouseEnter={(e) => {
                   const el = e.currentTarget as HTMLElement;
-                  el.style.borderColor = "rgba(124,58,237,0.4)";
+                  el.style.borderColor = "rgba(99,102,241,0.4)";
                   el.style.boxShadow =
-                    "0 0 30px rgba(124,58,237,0.08), inset 0 1px 0 rgba(124,58,237,0.1)";
+                    "0 0 30px rgba(99,102,241,0.08), inset 0 1px 0 rgba(99,102,241,0.1)";
                   el.style.transform = "translateY(-3px)";
                 }}
                 onMouseLeave={(e) => {

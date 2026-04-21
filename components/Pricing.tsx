@@ -166,7 +166,9 @@ export default function Pricing() {
                 </ul>
 
                 <a
-                  href="#contact"
+                  href="https://cal.com/akram-zahwi/15min"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center justify-center w-full px-5 py-3.5 text-sm font-medium rounded-sm transition-all duration-200"
                   style={
                     highlight
@@ -174,7 +176,7 @@ export default function Pricing() {
                           background:
                             "linear-gradient(90deg, var(--color-accent), var(--color-accent-2))",
                           color: "#fff",
-                          boxShadow: "0 4px 20px rgba(124,58,237,0.4)",
+                          boxShadow: "0 4px 20px rgba(99,102,241,0.4)",
                         }
                       : {
                           border: "1px solid var(--color-line)",
@@ -185,18 +187,18 @@ export default function Pricing() {
                   onMouseEnter={(e) => {
                     if (highlight) {
                       e.currentTarget.style.boxShadow =
-                        "0 4px 30px rgba(124,58,237,0.6)";
+                        "0 4px 30px rgba(99,102,241,0.6)";
                       e.currentTarget.style.transform = "translateY(-1px)";
                     } else {
                       e.currentTarget.style.borderColor =
-                        "rgba(124,58,237,0.4)";
+                        "rgba(99,102,241,0.4)";
                       e.currentTarget.style.color = "var(--color-accent)";
                     }
                   }}
                   onMouseLeave={(e) => {
                     if (highlight) {
                       e.currentTarget.style.boxShadow =
-                        "0 4px 20px rgba(124,58,237,0.4)";
+                        "0 4px 20px rgba(99,102,241,0.4)";
                       e.currentTarget.style.transform = "translateY(0)";
                     } else {
                       e.currentTarget.style.borderColor = "var(--color-line)";

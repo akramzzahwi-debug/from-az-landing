@@ -40,7 +40,7 @@ export default function LangToggle() {
               ? {
                   backgroundColor: "var(--color-accent)",
                   color: "#fff",
-                  boxShadow: "0 0 10px rgba(124,58,237,0.4)",
+                  boxShadow: "0 0 10px rgba(99,102,241,0.4)",
                 }
               : { color: "var(--color-ink-muted)" }
           }

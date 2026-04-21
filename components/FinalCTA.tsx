@@ -95,23 +95,25 @@ export default function FinalCTA() {
 
         <FadeUp delay={0.15}>
           <a
-            href="#"
+            href="https://cal.com/akram-zahwi/15min"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-8 py-4 text-sm font-medium rounded-sm mb-6 transition-all duration-200"
             style={{
               background:
                 "linear-gradient(90deg, var(--color-accent), var(--color-accent-2))",
               color: "#fff",
               boxShadow:
-                "0 0 40px rgba(124,58,237,0.5), 0 0 80px rgba(124,58,237,0.2)",
+                "0 0 30px rgba(99,102,241,0.3), 0 0 60px rgba(99,102,241,0.1)",
             }}
             onMouseEnter={(e) => {
               e.currentTarget.style.boxShadow =
-                "0 0 60px rgba(124,58,237,0.7), 0 0 100px rgba(124,58,237,0.3)";
+                "0 0 40px rgba(99,102,241,0.5), 0 0 80px rgba(99,102,241,0.2)";
               e.currentTarget.style.transform = "translateY(-2px) scale(1.01)";
             }}
             onMouseLeave={(e) => {
               e.currentTarget.style.boxShadow =
-                "0 0 40px rgba(124,58,237,0.5), 0 0 80px rgba(124,58,237,0.2)";
+                "0 0 30px rgba(99,102,241,0.3), 0 0 60px rgba(99,102,241,0.1)";
               e.currentTarget.style.transform = "translateY(0) scale(1)";
             }}
             data-plausible="Book audit"

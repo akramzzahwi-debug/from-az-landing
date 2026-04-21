@@ -7,7 +7,7 @@
     "cta": "Rezerviraj analizo"
   },
   "hero": {
-    "eyebrow": "SPLETNE STRANI PO MERI · EDINBURG",
+    "eyebrow": "SPLETNE STRANI PO MERI · UK & EVROPA",
     "stat1value": "5",
     "stat1unit": "Dni",
     "stat1label": "Povprečna dostava",
@@ -18,7 +18,7 @@
     "stat3unit": "/mes",
     "stat3label": "Maks. nove stranke",
     "headline": "Spletne strani, ki si zaslužijo svoje mesto.",
-    "subhead": "From A/Z je majhen, neodvisen studio, ki gradi spletne strani po meri za prizorišča, gostinstvo in ambiciozne lokalne znamke. Zagon v petih dneh. Zaupanje po vsej Evropi.",
+    "subhead": "From A/Z je majhen, neodvisen studio, ki gradi spletne strani po meri za prizorišča, gostinstvo in ambiciozne znamke. Zagon v petih dneh. Zaupanje po vsem UK, Evropi in dlje.",
     "cta": "Rezervirajte brezplačno 15-minutno analizo",
     "secondary": "Oglej si delo ↓"
   },
@@ -50,11 +50,11 @@
   "client": {
     "eyebrow": "ŠTUDIJA PRIMERA",
     "headline": "En ustanovitelj. Tri podjetja. Enak standard.",
-    "intro": "Vrsta zaupanja, ki jo gradimo, se kaže v ponovnih projektih. Smo dolgoročni digitalni partner za portfelj Mojce Majhen — prizorišče za dogodke, premijsko znamko po meri grajenih avtomobilov in izdano biografijo. Trije popolnoma različni občinstva. En dosleden standard izvedbe.",
+    "intro": "Vrsta zaupanja, ki jo gradimo, se kaže v ponovnih projektih. Smo dolgoročni digitalni partner za portfelj družine Majhen — prizorišče za dogodke, premijsko znamko po meri grajenih avtomobilov in spominsko publikacijo. Trije popolnoma različni občinstva. En dosleden standard izvedbe.",
     "project1": {
       "tag": "PRIZORIŠČE ZA DOGODKE · SLOVENIJA",
       "title": "Prenovljeno. Ponovno zasedeno.",
-      "body": "Popolna prenova spletne strani in tekoče upravljanje Instagrama. Mesečna povpraševanja za rezervacije so se v prvih 90 dneh povečala za približno deset."
+      "body": "Popolna prenova spletne strani in tekoče upravljanje Instagrama. Mesečna povpraševanja za rezervacije so v prvih 90 dneh od zagona zrasla za dvomestno število — in rast se je nadaljevala."
     },
     "project2": {
       "tag": "AVTOMOBILI PO MERI · SLOVENIJA",
@@ -62,10 +62,22 @@
       "body": "Celostna digitalna znamka in drseče animirana spletna stran za 1of1, slovenski luksuzni avtomobilski atelje po meri. Zagon Q2 2026."
     },
     "project3": {
-      "tag": "OSEBNA ZNAMKA · PUBLIKACIJA",
-      "title": "Knjiga in spletna prisotnost, ki ji ustreza.",
-      "body": "Digitalna platforma in kreativno vodstvo za izdano biografijo Mojce Majhen — znamka, ki povezuje prizorišče in avtomobilsko znamko."
+      "tag": "SPOMINSKA PUBLIKACIJA · SLOVENIJA",
+      "title": "Življenje, vredno spomina. Knjiga, ki to dokazuje.",
+      "body": "Digitalna platforma in kreativno vodstvo za 'Toni Bi Poznal Naslov Te Knjige' — poklon Antonu Majhnu. Osebne zgodbe, misli in zapuščina, ohranjena v tisku."
     }
+  },
+  "growth": {
+    "eyebrow": "UČINEK SESTAVLJENIH REZULTATOV",
+    "headline": "Hitra stran je naložba, ki raste skozi čas.",
+    "sub": "Povlecite drsnik, da vidite, kako hitrost, optimizirana za konverzije, povečuje vaše prihodke v 12 mesecih v primerjavi s staro, počasno stranjo.",
+    "label": "Čas (Meseci)",
+    "stat1": "Več rezervacij",
+    "stat1Value": "+{val}%",
+    "stat2": "Manjši osip",
+    "stat2Value": "-{val}%",
+    "legacy": "Stara stran",
+    "optimized": "From A/Z Optimizirano"
   },
   "process": {
     "eyebrow": "KAKO DELA",
@@ -139,7 +151,7 @@
   "about": {
     "eyebrow": "O NAS",
     "headline": "Majhen studio. Visok standard.",
-    "p1": "From A/Z je neodvisen studio, ki deluje med Edinburgom in Ljubljano. Gradimo spletne strani, kakršne bi želeli za lastna podjetja — hitre, poštene in zasnovane za ustvarjanje prihodkov, ne občudovanja.",
+    "p1": "From A/Z je neodvisen studio, ki deluje po vsem Združenem kraljestvu, Evropi in dlje. Gradimo spletne strani, kakršne bi želeli za lastna podjetja — hitre, poštene in zasnovane za ustvarjanje prihodkov, ne občudovanja.",
     "p2": "Naše ime odraža, kako delamo: znamko peljemo od A do Z — od prve ideje do zagnane, indeksirane, prodajne spletne strani. Ostajamo vitki namerno. Ena koda. En standard. Brez posrednikov, brez zunanjih izvajalcev, brez odvečnega."
   },
   "cta": {
@@ -149,10 +161,15 @@
     "sub": "Odziv v enem delovnem dnevu. Brez obveznosti."
   },
   "footer": {
-    "tagline": "Zgrajeno v Edinburgu · Stranke po vsej Evropi",
+    "tagline": "Delujemo po UK in Evropi · Stranke po vsem svetu",
     "email": "info@from-az.com",
     "ig": "@akramzahwi",
     "book": "Rezerviraj klic",
     "copy": "© {year} From A/Z. Vse pravice pridržane."
+  },
+  "seo": {
+    "title": "From A/Z — Spletne strani po meri za prizorišča in gostinstvo",
+    "description": "Neodvisen studio, ki gradi hitre spletne strani po meri za prizorišča, gostinstvo in ambiciozne znamke. Zagon v 5 dneh.",
+    "keywords": "izdelava spletnih strani, spletne strani po meri, gostinstvo spletni dizajn, rezervacijski sistemi, hitre spletne strani"
   }
 }

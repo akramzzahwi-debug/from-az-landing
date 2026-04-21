@@ -7,7 +7,7 @@
     "cta": "Book audit"
   },
   "hero": {
-    "eyebrow": "CUSTOM-CODED WEBSITES · EDINBURGH",
+    "eyebrow": "CUSTOM-CODED WEBSITES · UK & EUROPE",
     "stat1value": "5",
     "stat1unit": "Days",
     "stat1label": "Average delivery",
@@ -18,7 +18,7 @@
     "stat3unit": "/mo",
     "stat3label": "Max new clients",
     "headline": "Websites built to earn their keep.",
-    "subhead": "From A/Z is a small, independent studio building custom-coded sites for venues, hospitality, and ambitious local brands. Launched in five days. Trusted across Europe.",
+    "subhead": "From A/Z is a small, independent studio building custom-coded sites for venues, hospitality, and ambitious brands. Launched in five days. Trusted across the UK, Europe, and beyond.",
     "cta": "Book a free 15-min audit",
     "secondary": "See the work ↓"
   },
@@ -50,11 +50,11 @@
   "client": {
     "eyebrow": "CASE STUDY",
     "headline": "One founder. Three businesses. Same standard.",
-    "intro": "The kind of trust we build shows up as repeat work. We're the long-term digital partner for Mojca Majhen's portfolio — an event venue, a high-end custom automotive brand, and a published biography. Three completely different audiences. One coherent standard of execution.",
+    "intro": "The kind of trust we build shows up as repeat work. We're the long-term digital partner for the Majhen family portfolio — an event venue, a high-end custom automotive brand, and a commemorative publication. Three completely different audiences. One coherent standard of execution.",
     "project1": {
       "tag": "EVENT VENUE · SLOVENIA",
       "title": "Rebuilt. Rebooked.",
-      "body": "Full website rebuild and ongoing Instagram management. Monthly booking enquiries increased by roughly ten within the first 90 days."
+      "body": "Full website rebuild and ongoing Instagram management. Monthly booking enquiries rose by double digits within the first 90 days of launch — and the growth has held."
     },
     "project2": {
       "tag": "CUSTOM AUTOMOTIVE · SLOVENIA",
@@ -62,10 +62,22 @@
       "body": "Full digital brand and scroll-animated site for 1of1, Slovenia's luxury automotive customization atelier. Launching Q2 2026."
     },
     "project3": {
-      "tag": "PERSONAL BRAND · PUBLICATION",
-      "title": "A book and a web presence to match.",
-      "body": "Digital platform and creative direction for Mojca Majhen's published biography — a brand that bridges the venue and automotive ventures."
+      "tag": "MEMORIAL PUBLICATION · SLOVENIA",
+      "title": "A life worth remembering. A book that proves it.",
+      "body": "Digital platform and creative direction for 'Toni Bi Poznal Naslov Te Knjige' — a tribute to Anton Majhen. Personal stories, reflections, and a legacy preserved in print."
     }
+  },
+  "growth": {
+    "eyebrow": "THE COMPOUND EFFECT",
+    "headline": "A fast site is an asset that grows over time.",
+    "sub": "Drag the slider to see how conversion-optimized speed compounds your revenue over 12 months compared to a slow, legacy site.",
+    "label": "Time (Months)",
+    "stat1": "Faster bookings",
+    "stat1Value": "+{val}%",
+    "stat2": "Lower bounce rate",
+    "stat2Value": "-{val}%",
+    "legacy": "Legacy Site",
+    "optimized": "From A/Z Optimized"
   },
   "process": {
     "eyebrow": "HOW IT WORKS",
@@ -139,7 +151,7 @@
   "about": {
     "eyebrow": "ABOUT",
     "headline": "A small studio. A high standard.",
-    "p1": "From A/Z is an independent studio working between Edinburgh and Ljubljana. We build the kind of websites we'd want for our own businesses — fast, honest, and designed to generate revenue, not admiration.",
+    "p1": "From A/Z is an independent studio operating across the UK, Europe, and beyond. We build the kind of websites we'd want for our own businesses — fast, honest, and designed to generate revenue, not admiration.",
     "p2": "Our name reflects how we work: we take a brand from A to Z — from the first idea to the launched, indexed, converting site. We stay lean on purpose. One codebase. One standard. No account managers, no outsourced work, no bloat."
   },
   "cta": {
@@ -149,10 +161,15 @@
     "sub": "Reply within one working day. No obligation."
   },
   "footer": {
-    "tagline": "Built in Edinburgh · Clients across Europe",
+    "tagline": "Operating across the UK & Europe · Clients worldwide",
     "email": "info@from-az.com",
     "ig": "@akramzahwi",
     "book": "Book a call",
     "copy": "© {year} From A/Z. All rights reserved."
+  },
+  "seo": {
+    "title": "From A/Z — Custom-coded websites for venues & hospitality",
+    "description": "An independent studio building fast, custom-coded websites for venues, hospitality, and ambitious local brands. Launched in 5 days.",
+    "keywords": "web design uk, custom nextjs websites, hospitality web design, venue booking systems, high performance websites, web design europe"
   }
 }

@@ -38,10 +38,10 @@ export default function Pillars() {
                 }}
                 onMouseEnter={(e) => {
                   const el = e.currentTarget as HTMLElement;
-                  el.style.borderColor = "rgba(124,58,237,0.35)";
-                  el.style.background = "rgba(19,19,31,0.9)";
+                  el.style.borderColor = "rgba(99,102,241,0.35)";
+                  el.style.background = "rgba(15,15,22,0.95)";
                   el.style.boxShadow =
-                    "0 0 40px rgba(124,58,237,0.08), inset 0 1px 0 rgba(124,58,237,0.1)";
+                    "0 0 40px rgba(99,102,241,0.06), inset 0 1px 0 rgba(99,102,241,0.08)";
                   el.style.transform = "translateY(-3px)";
                 }}
                 onMouseLeave={(e) => {

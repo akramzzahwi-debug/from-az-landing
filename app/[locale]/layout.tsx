@@ -1,7 +1,6 @@
-import type { Metadata } from "next";
 import { Fraunces, Inter } from "next/font/google";
 import { NextIntlClientProvider } from "next-intl";
-import { getMessages, setRequestLocale } from "next-intl/server";
+import { getMessages, getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import Script from "next/script";
 import { routing } from "@/i18n/routing";
@@ -20,37 +19,47 @@ const inter = Inter({
   display: "swap",
 });
 
-export const metadata: Metadata = {
-  title: "From A/Z — Custom-coded websites for venues & hospitality · Edinburgh",
-  description:
-    "An independent studio building fast, custom-coded websites for venues, hospitality, and ambitious local brands. Launched in 5 days. Based in Edinburgh.",
-  metadataBase: new URL("https://from-az.com"),
-  openGraph: {
-    title: "From A/Z — Custom-coded websites for venues & hospitality",
-    description:
-      "An independent studio building fast, custom-coded websites for venues, hospitality, and ambitious local brands. Launched in 5 days. Based in Edinburgh.",
-    url: "https://from-az.com",
-    siteName: "From A/Z",
-    images: [
-      {
-        url: "/og-image.png",
-        width: 1200,
-        height: 630,
-        alt: "From A/Z — Custom-coded websites",
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "seo" });
+
+  return {
+    title: t("title"),
+    description: t("description"),
+    keywords: t("keywords"),
+    metadataBase: new URL("https://from-az.com"),
+    alternates: {
+      canonical: "/",
+      languages: {
+        en: "/en",
+        sl: "/sl",
       },
-    ],
-    locale: "en_GB",
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "From A/Z — Custom-coded websites for venues & hospitality",
-    description:
-      "An independent studio building fast, custom-coded websites. Launched in 5 days.",
-    images: ["/og-image.png"],
-  },
-  robots: { index: true, follow: true },
-};
+    },
+    openGraph: {
+      title: t("title"),
+      description: t("description"),
+      url: "https://from-az.com",
+      siteName: "From A/Z",
+      images: [
+        {
+          url: "/og-image.png",
+          width: 1200,
+          height: 630,
+          alt: t("title"),
+        },
+      ],
+      locale: locale === "sl" ? "sl_SI" : "en_GB",
+      type: "website",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: t("title"),
+      description: t("description"),
+      images: ["/og-image.png"],
+    },
+    robots: { index: true, follow: true },
+  };
+}
 
 const organizationSchema = {
   "@context": "https://schema.org",
@@ -59,10 +68,9 @@ const organizationSchema = {
   url: "https://from-az.com",
   email: "info@from-az.com",
   description:
-    "An independent studio building fast, custom-coded websites for venues, hospitality, and ambitious local brands.",
+    "An independent studio building fast, custom-coded websites for venues, hospitality, and ambitious brands across the UK and Europe.",
   address: {
     "@type": "PostalAddress",
-    addressLocality: "Edinburgh",
     addressCountry: "GB",
   },
   sameAs: ["https://instagram.com/akramzahwi"],

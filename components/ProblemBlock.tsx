@@ -47,7 +47,7 @@ export default function ProblemBlock() {
                 style={{ borderColor: "var(--color-line)" }}
                 onMouseEnter={(e) => {
                   e.currentTarget.style.borderColor =
-                    "rgba(124,58,237,0.4)";
+                    "rgba(99,102,241,0.4)";
                   const p = e.currentTarget.querySelector("p");
                   if (p) p.style.color = "var(--color-ink)";
                   const dot = e.currentTarget.querySelector(".line-dot");

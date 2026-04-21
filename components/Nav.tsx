@@ -20,12 +20,12 @@ export default function Nav() {
       className="fixed top-0 left-0 right-0 z-50 transition-all duration-500"
       style={{
         backgroundColor: scrolled
-          ? "rgba(9,9,11,0.85)"
+          ? "rgba(5,5,5,0.8)"
           : "transparent",
-        backdropFilter: scrolled ? "blur(20px) saturate(180%)" : "none",
-        WebkitBackdropFilter: scrolled ? "blur(20px) saturate(180%)" : "none",
+        backdropFilter: scrolled ? "blur(12px) saturate(160%)" : "none",
+        WebkitBackdropFilter: scrolled ? "blur(12px) saturate(160%)" : "none",
         borderBottom: scrolled
-          ? "1px solid rgba(255,255,255,0.06)"
+          ? "1px solid rgba(255,255,255,0.04)"
           : "1px solid transparent",
       }}
     >
@@ -34,7 +34,7 @@ export default function Nav() {
         style={{ maxWidth: "1160px" }}
       >
         <Link
-          href="#"
+          href="/"
           className="font-display text-lg tracking-tight transition-colors duration-200"
           style={{ color: "var(--color-ink)" }}
           aria-label="From A/Z — home"
@@ -74,23 +74,25 @@ export default function Nav() {
         <div className="flex items-center gap-6">
           <LangToggle />
           <a
-            href="#contact"
+            href="https://cal.com/akram-zahwi/15min"
+            target="_blank"
+            rel="noopener noreferrer"
             className="hidden md:inline-flex items-center px-4 py-2 text-sm font-medium rounded-sm transition-all duration-200"
             style={{
               backgroundColor: "var(--color-accent)",
               color: "#fff",
-              boxShadow: "0 0 20px rgba(124,58,237,0.35)",
+              boxShadow: "0 0 20px rgba(99,102,241,0.25)",
             }}
             onMouseEnter={(e) => {
-              e.currentTarget.style.backgroundColor = "#6D28D9";
+              e.currentTarget.style.backgroundColor = "var(--color-accent-2)";
               e.currentTarget.style.boxShadow =
-                "0 0 30px rgba(124,58,237,0.55)";
+                "0 0 30px rgba(99,102,241,0.45)";
               e.currentTarget.style.transform = "translateY(-1px)";
             }}
             onMouseLeave={(e) => {
               e.currentTarget.style.backgroundColor = "var(--color-accent)";
               e.currentTarget.style.boxShadow =
-                "0 0 20px rgba(124,58,237,0.35)";
+                "0 0 20px rgba(99,102,241,0.25)";
               e.currentTarget.style.transform = "translateY(0)";
             }}
             data-plausible="Book audit"

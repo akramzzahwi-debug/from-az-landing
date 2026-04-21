@@ -20,6 +20,16 @@ export default function Hero() {
 
   useEffect(() => {
     const init = async () => {
+      if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+        [eyebrowRef, subheadRef, ctaRef, orbRef].forEach((r) => {
+          if (r.current) r.current.style.opacity = "1";
+        });
+        headlineRef.current
+          ?.querySelectorAll<HTMLElement>(".word")
+          .forEach((w) => (w.style.opacity = "1"));
+        return;
+      }
+
       const { gsap } = await import("gsap");
 
       const words = headlineRef.current?.querySelectorAll<HTMLElement>(".word");
@@ -174,7 +184,9 @@ export default function Hero() {
               style={{ opacity: 0 }}
             >
               <a
-                href="#contact"
+                href="https://cal.com/akram-zahwi/15min"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-6 py-3.5 text-sm font-medium rounded-sm transition-all duration-200"
                 style={{
                   backgroundColor: "var(--color-accent)",
@@ -239,9 +251,9 @@ export default function Hero() {
                   height: "340px",
                   borderRadius: "50%",
                   background:
-                    "radial-gradient(circle at 38% 38%, rgba(124,58,237,0.45) 0%, rgba(79,70,229,0.25) 40%, transparent 70%)",
-                  filter: "blur(50px)",
-                  animation: "pulse-orb 5s ease-in-out infinite",
+                    "radial-gradient(circle at 38% 38%, rgba(99,102,241,0.2) 0%, rgba(79,70,229,0.1) 40%, transparent 70%)",
+                  filter: "blur(60px)",
+                  animation: "pulse-orb 8s ease-in-out infinite",
                 }}
               />
             </div>
