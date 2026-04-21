@@ -76,9 +76,11 @@ export default function TrustBar() {
 
       const { gsap } = await import("gsap");
 
+      const isMobile = window.matchMedia("(max-width: 767px)").matches;
+
       tween = gsap.to(track, {
         xPercent: -50,
-        duration: 32,
+        duration: isMobile ? 16 : 32,
         ease: "none",
         repeat: -1,
       });
@@ -116,7 +118,7 @@ export default function TrustBar() {
         {doubled.map((client, i) => (
           <div
             key={i}
-            className="inline-flex items-center justify-center px-16 md:px-20 transition-all duration-500 group"
+            className="inline-flex items-center justify-center px-8 md:px-20 transition-all duration-500 group"
           >
             <div className="relative flex items-center justify-center opacity-40 transition-opacity duration-500 group-hover:opacity-100">
               <div className="h-10 md:h-12 flex items-center justify-center">
