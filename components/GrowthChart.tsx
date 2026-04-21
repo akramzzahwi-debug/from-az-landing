@@ -2,16 +2,13 @@
 
 import { useTranslations } from "next-intl";
 import { useState } from "react";
-import { motion, useSpring, useTransform } from "framer-motion";
+import { motion } from "framer-motion";
 import FadeUp from "./FadeUp";
 
 export default function GrowthChart() {
   const t = useTranslations("growth");
   const [value, setValue] = useState(0.5); // 0 to 1 representing 1 to 12 months
 
-  // Spring animations for smooth transitions
-  const springValue = useSpring(value, { stiffness: 60, damping: 20 });
-  
   // Chart path calculation
   const months = 12;
   const width = 800;
@@ -94,31 +91,41 @@ export default function GrowthChart() {
 
               {/* Chart SVG */}
               <svg viewBox={`0 0 ${width} ${height}`} className="w-full h-auto overflow-visible relative z-10">
+                <defs>
+                  <clipPath id="optimized-reveal">
+                    <motion.rect
+                      x="0"
+                      y="-20"
+                      height={height + 40}
+                      animate={{ width: value * width }}
+                      transition={{ type: "spring", stiffness: 60, damping: 20 }}
+                    />
+                  </clipPath>
+                </defs>
+
                 {/* Legacy Line */}
-                <polyline 
-                  points={legacyPoints} 
-                  fill="none" 
-                  stroke="rgba(255,255,255,0.2)" 
-                  strokeWidth="2" 
-                  strokeDasharray="4 4" 
+                <polyline
+                  points={legacyPoints}
+                  fill="none"
+                  stroke="rgba(255,255,255,0.2)"
+                  strokeWidth="2"
+                  strokeDasharray="4 4"
                 />
-                
-                {/* Optimized Line */}
-                <motion.polyline 
-                  points={optimizedPoints} 
-                  fill="none" 
-                  stroke="var(--color-accent)" 
-                  strokeWidth="4" 
+
+                {/* Optimized Line — revealed by clipPath */}
+                <polyline
+                  points={optimizedPoints}
+                  fill="none"
+                  stroke="var(--color-accent)"
+                  strokeWidth="4"
                   strokeLinecap="round"
-                  style={{
-                    pathLength: springValue
-                  }}
+                  clipPath="url(#optimized-reveal)"
                 />
 
                 {/* Legend Labels */}
-                <g className="text-[14px]" fill="currentColor">
-                   <text x="10" y="40" className="opacity-40" style={{ fontFamily: "var(--font-inter)" }}>{t("legacy")}</text>
-                   <text x="10" y="15" style={{ fill: "var(--color-accent)", fontWeight: 600, fontFamily: "var(--font-inter)" }}>{t("optimized")}</text>
+                <g fill="currentColor">
+                  <text x="10" y="40" opacity={0.4} style={{ fontFamily: "var(--font-inter)", fontSize: 14 }}>{t("legacy")}</text>
+                  <text x="10" y="15" style={{ fill: "var(--color-accent)", fontWeight: 600, fontFamily: "var(--font-inter)", fontSize: 14 }}>{t("optimized")}</text>
                 </g>
               </svg>
 
