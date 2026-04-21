@@ -19,8 +19,14 @@ const inter = Inter({
   display: "swap",
 });
 
-export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
-  const { locale } = await params;
+type Props = {
+  children: React.ReactNode;
+  params: Promise<{ locale: string }>;
+};
+
+export async function generateMetadata(props: { params: Promise<{ locale: string }> }) {
+  const params = await props.params;
+  const locale = params.locale;
   const t = await getTranslations({ locale, namespace: "seo" });
 
   return {
@@ -61,6 +67,10 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   };
 }
 
+export function generateStaticParams() {
+  return routing.locales.map((locale) => ({ locale }));
+}
+
 const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
@@ -76,24 +86,15 @@ const organizationSchema = {
   sameAs: ["https://instagram.com/akramzahwi"],
 };
 
-type Props = {
-  children: React.ReactNode;
-  params: Promise<{ locale: string }>;
-};
+export default async function LocaleLayout(props: Props) {
+  const params = await props.params;
+  const locale = params.locale;
 
-export function generateStaticParams() {
-  return routing.locales.map((locale) => ({ locale }));
-}
-
-export default async function LocaleLayout({ children, params }: Props) {
-  const { locale } = await params;
-
-  if (!routing.locales.includes(locale as "en" | "sl")) {
+  if (!routing.locales.includes(locale as any)) {
     notFound();
   }
 
   setRequestLocale(locale);
-
   const messages = await getMessages();
 
   return (
@@ -103,7 +104,6 @@ export default async function LocaleLayout({ children, params }: Props) {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
         />
-        {/* Plausible analytics — replace domain when live */}
         <Script
           defer
           data-domain="from-az.com"
@@ -113,7 +113,7 @@ export default async function LocaleLayout({ children, params }: Props) {
       </head>
       <body>
         <NextIntlClientProvider messages={messages}>
-          {children}
+          {props.children}
         </NextIntlClientProvider>
       </body>
     </html>
