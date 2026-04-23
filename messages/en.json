@@ -51,6 +51,11 @@
     "eyebrow": "CASE STUDY",
     "headline": "One founder. Three businesses. Same standard.",
     "intro": "The kind of trust we build shows up as repeat work. We're the long-term digital partner for the Majhen family portfolio — an event venue, a high-end custom automotive brand, and a commemorative publication. Three completely different audiences. One coherent standard of execution.",
+    "testimonial": {
+      "quote": "We collaborated with the From A/Z team on two website projects tied to social media, and I'm genuinely impressed by their technical depth and how effectively they streamline every process. What stands out most is their proactive approach — they seek out the right solutions for each client and immerse themselves in every piece of content and every story. They honour agreements and always respect the client's vision and objectives.",
+      "name": "Mojca Majhen",
+      "role": "Founder, 369 Place & 1of1 Cars"
+    },
     "project1": {
       "tag": "EVENT VENUE · SLOVENIA",
       "title": "Rebuilt. Rebooked.",

@@ -51,6 +51,11 @@
     "eyebrow": "ŠTUDIJA PRIMERA",
     "headline": "En ustanovitelj. Tri podjetja. Enak standard.",
     "intro": "Vrsta zaupanja, ki jo gradimo, se kaže v ponovnih projektih. Smo dolgoročni digitalni partner za portfelj družine Majhen — prizorišče za dogodke, premijsko znamko po meri grajenih avtomobilov in spominsko publikacijo. Trije popolnoma različni občinstva. En dosleden standard izvedbe.",
+    "testimonial": {
+      "quote": "Z ekipo From A/Z sem sodelovala na dveh projektih izdelave spletnih strani v povezavi s socialnimi omrežji in sem navdušena nad njihovim poznavanjem in optimizacijo delovnih procesov. Predvsem me veseli to, da so proaktivni, iščejo ustrezne rešitve za naročnika in se v vsako vsebino in zgodbo poglobijo. Držijo se dogovorov in upoštevajo izhodišča in želje naročnika.",
+      "name": "Mojca Majhen",
+      "role": "Ustanoviteljica, 369 Place & 1of1 Cars"
+    },
     "project1": {
       "tag": "PRIZORIŠČE ZA DOGODKE · SLOVENIJA",
       "title": "Prenovljeno. Ponovno zasedeno.",

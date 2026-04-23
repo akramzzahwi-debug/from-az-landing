@@ -15,6 +15,7 @@ export default function FeaturedClient() {
       style={{ backgroundColor: "var(--color-bg-alt)" }}
     >
       <div className="mx-auto" style={{ maxWidth: "1160px" }}>
+        {/* Header — single column */}
         <FadeUp>
           <p
             className="flex items-center gap-2.5 text-xs font-medium tracking-widest uppercase mb-6"
@@ -43,14 +44,15 @@ export default function FeaturedClient() {
 
         <FadeUp delay={0.12}>
           <p
-            className="text-base md:text-lg max-w-2xl mb-20"
+            className="text-base md:text-lg max-w-2xl"
             style={{ color: "var(--color-ink-muted)", lineHeight: 1.7 }}
           >
             {t("intro")}
           </p>
         </FadeUp>
 
-        <div className="grid md:grid-cols-3 gap-4 items-stretch">
+        {/* Project cards */}
+        <div className="grid md:grid-cols-3 gap-4 items-stretch mt-12">
           {projects.map((proj, i) => (
             <FadeUp key={proj} delay={0.08 * i} className="h-full">
               <article
@@ -62,8 +64,7 @@ export default function FeaturedClient() {
                 onMouseEnter={(e) => {
                   const el = e.currentTarget as HTMLElement;
                   el.style.borderColor = "rgba(99,102,241,0.4)";
-                  el.style.boxShadow =
-                    "0 20px 40px rgba(0,0,0,0.4)";
+                  el.style.boxShadow = "0 20px 40px rgba(0,0,0,0.4)";
                   el.style.transform = "translateY(-4px)";
                 }}
                 onMouseLeave={(e) => {
@@ -73,12 +74,9 @@ export default function FeaturedClient() {
                   el.style.transform = "translateY(0)";
                 }}
               >
-                {/* Project Image */}
                 <div
                   className="w-full aspect-[16/9] relative overflow-hidden"
-                  style={{
-                    borderBottom: "1px solid var(--color-line)",
-                  }}
+                  style={{ borderBottom: "1px solid var(--color-line)" }}
                 >
                   <Image
                     src={`/assets/${proj}.png`}
@@ -121,6 +119,72 @@ export default function FeaturedClient() {
             </FadeUp>
           ))}
         </div>
+
+        {/* Pull-quote strip */}
+        <FadeUp delay={0.16}>
+          <div
+            className="mt-16 md:mt-20 pt-10 md:pt-12"
+            style={{ borderTop: "1px solid var(--color-line)" }}
+          >
+            <div className="flex flex-col md:flex-row md:items-center gap-4 md:gap-12">
+              {/* Decorative quote mark */}
+              <span
+                aria-hidden="true"
+                className="font-display flex-shrink-0 leading-none select-none"
+                style={{
+                  fontSize: "clamp(3rem, 6vw, 5rem)",
+                  color: "var(--color-accent)",
+                  opacity: 0.25,
+                  fontWeight: 400,
+                }}
+              >
+                &ldquo;
+              </span>
+
+              {/* Quote text */}
+              <blockquote
+                className="flex-1 text-base md:text-lg italic"
+                style={{ color: "var(--color-ink-muted)", lineHeight: 1.75 }}
+              >
+                {t("testimonial.quote")}
+              </blockquote>
+
+              {/* Author */}
+              <div className="flex items-center gap-4 flex-shrink-0 mt-6 md:mt-0">
+                <div
+                  className="rounded-full overflow-hidden flex-shrink-0"
+                  style={{
+                    width: "56px",
+                    height: "56px",
+                    border: "2px solid var(--color-line)",
+                  }}
+                >
+                  <Image
+                    src="/assets/testimonials/mojca-majhen.png"
+                    alt={t("testimonial.name")}
+                    width={56}
+                    height={56}
+                    className="object-cover w-full h-full"
+                  />
+                </div>
+                <div>
+                  <p
+                    className="text-sm font-medium whitespace-nowrap"
+                    style={{ color: "var(--color-ink)" }}
+                  >
+                    {t("testimonial.name")}
+                  </p>
+                  <p
+                    className="text-xs whitespace-nowrap"
+                    style={{ color: "var(--color-ink-muted)" }}
+                  >
+                    {t("testimonial.role")}
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </FadeUp>
       </div>
     </section>
   );
